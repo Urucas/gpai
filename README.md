@@ -1,4 +1,6 @@
 # googleplay-app-info-api
+[![Build Status](https://travis-ci.org/Urucas/googleplay-app-info-api.svg)](https://travis-ci.org/Urucas/googleplay-app-info-api)
+
 A simple nodejs API to get Google Play App Info
 
 #API
