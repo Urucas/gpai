@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>GPAI in the browser</title>
+  <script src="gpai.js"></script>
+</head>
+<body>
+  <script>
+    gpai({_package_:"com.urucas.wifime"}).then(function(info){
+      document.write(info.toString());
+    });
+  </script>
+</body>
+</html>
