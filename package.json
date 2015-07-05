@@ -1,11 +1,12 @@
 {
-  "name": "googleplay-app-info",
+  "name": "gpai",
   "version": "0.0.1",
   "description": "A simple nodejs API to get Google Play Applicaiton Info",
   "main": "./node/index.js",
   "scripts": {
     "test": "node_modules/mocha/bin/mocha tests/* --compilers js:babel/register -t 15s",
-    "build": "make clean && make node"
+    "build": "make clean && make node",
+    "browserify" : "browserify ./lib/index.js -t babelify --outfile ./dist/gpai.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "soupselect": "^0.2.0"
   },
   "devDependencies": {
+    "babelify": "^6.1.2",
     "mocha": "^2.2.5",
     "mocha-clean": "^0.4.0"
   }
