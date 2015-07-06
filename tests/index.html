@@ -8,6 +8,7 @@
 </head>
 <body>
   <script>
+    var gpai = require('gpai');
     gpai({_package_:"com.urucas.wifime"}).then(function(info){
       document.write(info.toString());
     });
