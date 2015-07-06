@@ -16,9 +16,6 @@ app.get("/*", (req, res) => {
 
 let server = app.listen(process.env.PORT || 5000, (err) => {
   console.log("Service running");
-  if(err) {
-    console.log(err);
-    process.exit(1);
-  }
+  if(err) console.log(err);
 });
 
