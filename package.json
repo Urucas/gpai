@@ -7,7 +7,7 @@
     "test": "node_modules/mocha/bin/mocha tests/* --compilers js:babel/register -t 15s",
     "build": "make clean && make node",
     "browserify": "browserify -t babelify -r ./lib/index.js:gpai > ./dist/gpai.js",
-    "service" : "babel-node service/api.js"
+    "start" : "babel-node service/api.js"
   },
   "repository": {
     "type": "git",
