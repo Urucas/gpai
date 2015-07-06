@@ -1,6 +1,6 @@
 // es6 runtime requirements
 require('babel/polyfill');
-import gplayinfo from '../lib/';
+import gpai from '../lib/';
 
 describe("Google Play API instance test", () => {
   
@@ -14,7 +14,7 @@ describe("Google Play API instance test", () => {
       stars_count: '9',
       logo: 'https://lh6.ggpht.com/_b62klCs1JpdxBjt4nN3MOmHfVSaiHOPFKqVdB9Efgybe1FarmZn9Q92qLDdxGMjOg=w300' 
     }
-    var api = gplayinfo({_package_:"com.urucas.wifime"});
+    var api = gpai({id:"com.urucas.wifime"});
     api.then((info) => {
       if(info.pkg != "com.urucas.wifime") throw new Error("Error setting package");
       if(info.url != response.url) throw new Error("Error setting package url");
