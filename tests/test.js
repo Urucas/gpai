@@ -18,7 +18,7 @@ describe("Google Play API instance test", () => {
     api.then((info) => {
       if(info.pkg != "com.urucas.wifime") throw new Error("Error setting package");
       if(info.url != response.url) throw new Error("Error setting package url");
-      if(!/\d\,\d/.test(info.stars)) throw new Error("Error setting package stars");
+      if(!/\d[\,\.]\d/.test(info.stars)) throw new Error("Error setting package stars");
       if(!/\d+/.test(info.stars_count)) throw new Error("Error setting package stars");
       done();
     });
