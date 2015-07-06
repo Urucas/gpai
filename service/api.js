@@ -11,6 +11,10 @@ app.get("/*", (req, res) => {
   });
 });
 
+app.get("/favicon.ico", (req, res) => {
+  res.send("no favicon");
+});
+
 let server = app.listen(process.env.PORT || 5000, (err) => {
   console.log("Service running");
   if(err) {
