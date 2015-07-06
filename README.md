@@ -17,3 +17,8 @@ gpai({_package_:"com.urucas.wifime"}).then(function(info){
   //   stars_count: '9 ',
   //   logo: 'https://lh6.ggpht.com/_b62klCs1JpdxBjt4nN3MOmHfVSaiHOPFKqVdB9Efgybe1FarmZn9Q92qLDdxGMjOg=w300' }
 });
+
+#Service
+
+http://gapi-service.herokuapp.com/?id=com.urucas.wifime
+
