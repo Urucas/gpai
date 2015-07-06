@@ -11,6 +11,8 @@ app.get("/*", (req, res) => {
   }
   gapi({id:id}).then( (info) => {
     res.jsonp(info);
+  }, (err) => {
+    res.jsonp({error:"Package not found"});
   });
 });
 
