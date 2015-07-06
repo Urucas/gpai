@@ -6,7 +6,7 @@ A simple nodejs API to get Google Play App Info
 #API
 ```javascript
 var gpai = require('googleplay-app-info-api');
-gpai({_package_:"com.urucas.wifime"}).then(function(info){
+gpai({id:"com.urucas.wifime"}).then(function(info){
   console.log(info);
   // 
   // { url: 'https://play.google.com/store/apps/details?id=com.urucas.wifime',
