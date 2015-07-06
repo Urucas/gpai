@@ -5,7 +5,6 @@ let app = express();
 
 app.get("/*", (req, res) => {
   let pkg = req.query.id
-  console.log(pkg);
   if(pkg == undefined) res.json({error:"Package id not defined"});
   gapi({_package_:pkg}).then( (info) => {
     res.json(info);
