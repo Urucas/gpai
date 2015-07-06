@@ -4,7 +4,7 @@
   "description": "A simple nodejs API to get Google Play Applicaiton Info",
   "main": "./node/index.js",
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha tests/* --compilers js:babel/register -t 15s",
+    "test": "node_modules/mocha/bin/mocha tests/test.js --compilers js:babel/register -t 15s",
     "build": "make clean && make node",
     "browserify": "browserify -t babelify -r ./lib/index.js:gpai > ./dist/gpai.js",
     "start" : "babel-node service/api.js"

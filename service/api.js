@@ -4,15 +4,14 @@ import gapi from '../lib';
 let app = express();
 
 app.get("/*", (req, res) => {
-  let pkg = req.query.id
-  if(pkg == undefined) res.json({error:"Package id not defined"});
-  gapi({_package_:pkg}).then( (info) => {
+  let id = req.query.id
+  if(id == undefined) { 
+    res.json({error:"Package id not defined"});
+    return;
+  }
+  gapi({id:id}).then( (info) => {
     res.json(info);
   });
-});
-
-app.get("/favicon.ico", (req, res) => {
-  res.send("no favicon");
 });
 
 let server = app.listen(process.env.PORT || 5000, (err) => {
