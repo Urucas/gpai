@@ -22,3 +22,12 @@ gpai({id:"com.urucas.wifime"}).then(function(info){
 #Service
 http://gapi-service.herokuapp.com/?id=com.urucas.wifime
 
+**In your browser**
+```html
+<script src="gpai.js"></script>
+var gpai = require('gpai');
+    gpai({id:"com.urucas.wifime"}).then(function(info){
+      console.log(info);
+    });
+```
+
