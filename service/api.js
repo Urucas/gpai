@@ -12,7 +12,7 @@ app.get("/*", (req, res) => {
   });
 });
 
-let server = app.listen(process.env.port || 5000, (err) => {
+let server = app.listen(process.env.port, (err) => {
   console.log("Service running");
   if(err) {
     console.log(err);
