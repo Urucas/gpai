@@ -9,9 +9,22 @@
 <body>
   <script>
     var gpai = require('gpai');
-    gpai({_package_:"com.urucas.wifime"}).then(function(info){
-      document.write(info.toString());
+    gpai({id:"com.urucas.wifime"}).then(function(info){
+      document.getElementById("package-name").innerText = info.name;
+      document.getElementById("package-url").innerText = info.url;
+      document.getElementById("package-url").setAttribute("href", info.url);
+      document.getElementById("package-id").innerText = info.pkg;
+      document.getElementById("package-company").innerText = info.company;
+      document.getElementById("package-stars").innerText = info.stars + "(" + info.stars_count + ")";
+      document.getElementById("package-logo").setAttribute("src", info.logo);
     });
   </script>
+
+  <div id="package-name"></div>
+  <div><a id="package-url" href="#" target="_blank"></a></div>
+  <div id="package-id"></div>
+  <div id="package-company"></div>
+  <div id="package-stars"></div>
+  <div><img id="package-logo" src="" /></div>
 </body>
 </html>
