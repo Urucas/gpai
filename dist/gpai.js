@@ -614,7 +614,7 @@ var _jsonp2 = _interopRequireDefault(_jsonp);
 
 function gpai(options) {
   return new Promise(function (resolve, reject) {
-    (0, _jsonp2["default"])("http://gapi-service.herokuapp.com/?id=" + options.id, function (err, data) {
+    (0, _jsonp2["default"])("http://gpai-service.herokuapp.com/?id=" + options.id, function (err, data) {
       if (err) return reject(err);
       resolve(data);
     });
