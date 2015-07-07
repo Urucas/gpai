@@ -1,6 +1,6 @@
 {
   "name": "gpai",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A simple nodejs API to get Google Play Applicaiton Info",
   "main": "./node/index.js",
   "scripts": {
