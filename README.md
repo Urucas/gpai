@@ -3,6 +3,11 @@
 
 A simple nodejs API to get Google Play App Info
 
+#Install
+```bash
+npm install gpai
+```
+
 #API
 ```javascript
 var gpai = require('gpai');
