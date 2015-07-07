@@ -22,7 +22,7 @@ gpai({id:"com.urucas.wifime"}).then(function(info){
 #Service
 [http://gpai-service.herokuapp.com/?id=com.urucas.wifime](http://gpai-service.herokuapp.com/?id=com.urucas.wifime)
 
-[![Heroku](https://heroku-badge.herokuapp.com/?app=gpai-service)]
+![Heroku](https://heroku-badge.herokuapp.com/?app=gpai-service)
 
 **In your browser**
 ```html
