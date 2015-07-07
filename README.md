@@ -1,4 +1,4 @@
-# googleplay-app-info-api
+# gpai (Google Play App Info)
 [![Build Status](https://travis-ci.org/Urucas/googleplay-app-info-api.svg)](https://travis-ci.org/Urucas/googleplay-app-info-api)
 
 A simple nodejs API to get Google Play App Info
@@ -20,7 +20,9 @@ gpai({id:"com.urucas.wifime"}).then(function(info){
 ```
 
 #Service
-http://gapi-service.herokuapp.com/?id=com.urucas.wifime
+[http://gpai-service.herokuapp.com/?id=com.urucas.wifime](http://gpai-service.herokuapp.com/?id=com.urucas.wifime)
+
+[![Heroku](https://heroku-badge.herokuapp.com/?app=gpai-service)]
 
 **In your browser**
 ```html
