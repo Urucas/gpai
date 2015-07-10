@@ -1,5 +1,5 @@
 # gpai (Google Play App Info)
-[![Build Status](https://travis-ci.org/Urucas/googleplay-app-info-api.svg)](https://travis-ci.org/Urucas/googleplay-app-info-api)
+[![Build Status](https://travis-ci.org/Urucas/gpai.svg)](https://travis-ci.org/Urucas/gpai)
 
 A simple nodejs API to get Google Play App Info
 
